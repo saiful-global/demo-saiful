@@ -62,7 +62,7 @@ const FEATURES = [
 ];
 
 const REVIEWS = [
-  { name: "Customer Name", text: "The biryani was hot, the portion was big, and it tasted like home. We come back every Friday." },
+  { name: "Saiful", text: "The biryani was hot, the portion was big, and it tasted like home. We come back every Friday." },
   { name: "Customer Name", text: "Quick service even on a busy night. The grilled chicken is the best in the area." },
   { name: "Customer Name", text: "Booked a table for 12 and everything was ready when we walked in." },
 ];
@@ -322,7 +322,7 @@ export default function Demo() {
             <figure key={i} className="rounded-2xl bg-[#12372A] p-6 text-white">
               <blockquote className="leading-relaxed text-white/90">&ldquo;{r.text}&rdquo;</blockquote>
               <figcaption className="mt-5 flex items-center gap-3">
-                <Img src="" alt={r.name} className="h-10 w-10 rounded-full" sizes="40px" />
+                <Img src="/saiful.png" alt={r.name} className="h-10 w-10 rounded-full" sizes="40px" />
                 <span className="text-sm font-semibold">{r.name}</span>
               </figcaption>
             </figure>

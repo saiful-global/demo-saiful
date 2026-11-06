@@ -22,18 +22,18 @@ const body = DM_Sans({
 
 // Put the logo file inside /public and set the path here, e.g. "/logo.png".
 // Leave empty to show a "Logo" placeholder box.
-const LOGO_SRC = "";
+const LOGO_SRC = "/logo.jpg";
 
-const RESTAURANT_NAME = "Bhoj Kitchen";
+const RESTAURANT_NAME = "Food bucket";
 
 // Every `image` field accepts a path from /public, e.g. "/images/biryani.jpg".
 // Leave empty to show an "Image" placeholder box.
 const MENU = {
   Starters: [
-    { name: "Crispy Chicken Wings", desc: "Tossed in house hot sauce, served with a cool dip.", price: 280, image: "" },
-    { name: "Beef Samosa", desc: "Hand-folded, filled with spiced beef and onion.", price: 120, image: "" },
-    { name: "Fish Fingers", desc: "Golden fried, with tartar sauce and lemon.", price: 320, image: "" },
-    { name: "Hot & Sour Soup", desc: "Thick, peppery and ready in minutes.", price: 220, image: "" },
+    { name: "Crispy Chicken Wings", desc: "Tossed in house hot sauce, served with a cool dip.", price: 280, image: "/1.jpg" },
+    { name: "Beef Samosa", desc: "Hand-folded, filled with spiced beef and onion.", price: 120, image: "/2.jpg" },
+    { name: "Fish Fingers", desc: "Golden fried, with tartar sauce and lemon.", price: 320, image: "/3.jpg" },
+    { name: "Hot & Sour Soup", desc: "Thick, peppery and ready in minutes.", price: 220, image: "/4.jpg" },
   ],
   Mains: [
     { name: "Kacchi Biryani", desc: "Slow-cooked mutton and fragrant rice with borhani.", price: 520, image: "" },
@@ -187,9 +187,9 @@ export default function Demo() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:grid-cols-2 md:py-20">
           <div>
             <h1 className="font-[family-name:var(--font-display)] text-5xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">
-              Cooked fresh.
+              Home Made
               <br />
-              Served hot.
+              Fresh Cooked Food.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-white/80">
               Family recipes, charcoal grills and big portions. Eat in, take away or get it delivered.
@@ -207,12 +207,12 @@ export default function Demo() {
 
           {/* Arch-shaped hero image */}
           <div className="relative mx-auto w-full max-w-sm md:max-w-md">
-            <Img src="" alt="Signature dish" className="aspect-[4/5] w-full rounded-t-full" sizes="(min-width: 768px) 28rem, 90vw" />
+            <Img src="/2.jpg" alt="Signature dish" className="aspect-[4/5] w-full rounded-t-full" sizes="(min-width: 768px) 28rem, 90vw" />
             <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl bg-[#F2B705] p-3 pr-5 text-[#12372A] shadow-lg sm:-left-8">
-              <Img src="" alt="Today's special" className="h-14 w-14 rounded-xl" sizes="56px" />
+              <Img src="/1.jpg" alt="Today's special" className="h-14 w-14 rounded-xl" sizes="56px" />
               <div>
                 <p className="text-sm font-semibold">Today&apos;s special</p>
-                <p className="text-sm">Kacchi Biryani, ৳520</p>
+                <p className="text-sm">Crispy Fried Snacks, ৳520</p>
               </div>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function Demo() {
 
       {/* About */}
       <section id="about" className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2">
-        <Img src="" alt="Our kitchen" className="aspect-[5/4] w-full rounded-2xl" sizes="(min-width: 768px) 50vw, 100vw" />
+        <Img src="/5.jpg" alt="Our kitchen" className="aspect-[5/4] w-full rounded-2xl" sizes="(min-width: 768px) 50vw, 100vw" />
         <div>
           <h2 className="font-[family-name:var(--font-display)] text-4xl font-extrabold text-[#12372A]">
             A kitchen that never cut corners
@@ -304,12 +304,12 @@ export default function Demo() {
         <div className="mx-auto max-w-6xl px-5">
           <h2 className="font-[family-name:var(--font-display)] text-4xl font-extrabold text-[#12372A]">From our tables</h2>
           <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
-            <Img src="" alt="Gallery 1" className="row-span-2 min-h-64 rounded-2xl" sizes="25vw" />
-            <Img src="" alt="Gallery 2" className="aspect-square rounded-2xl" sizes="25vw" />
-            <Img src="" alt="Gallery 3" className="aspect-square rounded-2xl" sizes="25vw" />
-            <Img src="" alt="Gallery 4" className="row-span-2 min-h-64 rounded-2xl" sizes="25vw" />
-            <Img src="" alt="Gallery 5" className="aspect-square rounded-2xl" sizes="25vw" />
-            <Img src="" alt="Gallery 6" className="aspect-square rounded-2xl" sizes="25vw" />
+            <Img src="/3.jpg" alt="Gallery 1" className="row-span-2 min-h-64 rounded-2xl" sizes="25vw" />
+            <Img src="/6.jpg" alt="Gallery 2" className="aspect-square rounded-2xl" sizes="25vw" />
+            <Img src="/7.jpg" alt="Gallery 3" className="aspect-square rounded-2xl" sizes="25vw" />
+            <Img src="/8.jpg" alt="Gallery 4" className="row-span-2 min-h-64 rounded-2xl" sizes="25vw" />
+            <Img src="/9.jpg" alt="Gallery 5" className="aspect-square rounded-2xl" sizes="25vw" />
+            <Img src="/10.jpg" alt="Gallery 6" className="aspect-square rounded-2xl" sizes="25vw" />
           </div>
         </div>
       </section>
@@ -391,7 +391,7 @@ export default function Demo() {
               </a>
             ))}
           </nav>
-          <p className="text-sm">© {new Date().getFullYear()} {RESTAURANT_NAME}. All rights reserved.</p>
+          <p className="text-sm">© {new Date().getFullYear()} {RESTAURANT_NAME}. All rights reserved. Made by Saiful Islam</p>
         </div>
       </footer>
     </div>

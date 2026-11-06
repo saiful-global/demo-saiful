@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Bhoj Kitchen",
+  title: "Food bucket",
   description: "Fresh food, cooked to order. Dine in, take away or get it delivered.",
 };
 
